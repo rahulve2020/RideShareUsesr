@@ -9,6 +9,7 @@ import Foundation
 
 
 struct Response: Codable {
+    let notification_type : String?
     let orderId: String?
     let otp: Int?
     let driverInfo : DriverInfo?

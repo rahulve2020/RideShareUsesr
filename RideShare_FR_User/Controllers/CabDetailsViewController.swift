@@ -2,7 +2,7 @@
 //  CabDetailsViewController.swift
 //  RideShare_FR_User
 //
-//  Created by Aditya Gupta on 05/08/22.
+//  Created byPriya Rastogi on 05/08/22.
 //
 
 import UIKit

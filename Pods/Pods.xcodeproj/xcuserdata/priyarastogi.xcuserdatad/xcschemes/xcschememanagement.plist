@@ -84,7 +84,7 @@
 		<key>FirebaseDatabase.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>35</integer>
+			<integer>34</integer>
 		</dict>
 		<key>FirebaseInstallations.xcscheme</key>
 		<dict>
@@ -243,7 +243,7 @@
 		<key>leveldb-library.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>36</integer>
+			<integer>35</integer>
 		</dict>
 		<key>nanopb.xcscheme</key>
 		<dict>

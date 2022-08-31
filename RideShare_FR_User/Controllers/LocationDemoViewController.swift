@@ -1,9 +1,8 @@
 //
 //  LocationDemoViewController.swift
-//  Haute Delivery
+//  Ride-Share FR
 //
-//  Created by Preeti malik on 04/06/19.
-//  Copyright © 2019 Ashish Gupta. All rights reserved.
+//  Created by Priya Rastogi on 27/06/22.
 //
 
 import UIKit
@@ -69,6 +68,8 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
     var dropLatitude : Double?
     var dropLongitude : Double?
     
+    var notificationType : String?
+    
    // var dbRef : DatabaseReference?
 //    var driverAnnotation : MKPointAnnotation?
     
@@ -88,16 +89,20 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
     
         self.locationManager.delegate = self
         self.locationManager.requestWhenInUseAuthorization()
+        
+//        if notificationType == "accept_order" {
+//            let name = Notification.Name("updateDriver")
+//            NotificationCenter.default.addObserver(self, selector: #selector(updateDrivers(_:)), name: name, object: nil)
+//
+//        } else if notificationType == "start_order" {
+//
+//        }
+        
         let name = Notification.Name("updateDriver")
         NotificationCenter.default.addObserver(self, selector: #selector(updateDrivers(_:)), name: name, object: nil)
  
         loadUI()
-       // configureMapStyle()
-       // googleMaps.drawPath(GMSMapView.pathString)
-      //  addButtons()
-     //   LocationTracker.shared.locateMeOnLocationChange { [weak self]  _  in
-       //     self?.moveCarMarker()
-     //   }
+       
         
     }
     func moveCarMarker() {
@@ -195,30 +200,40 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
              LocationTracker.shared.locateMeOnLocationChange { [weak self]  _  in
                  self?.moveCarMarker()
              }
+            if objUser?.notification_type == "accept_order" {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "CabDetailsViewController") as! CabDetailsViewController
+            
+                self.addChild(vc)
+                vc.objResponse = objUser
+                vc.view.frame = self.view.frame
+                self.view.addSubview(vc.view)
+                vc.didMove(toParent: self)
+                drawPathDriver(obj: objUser!)
+            } else {
+                
+              //  self.view.removeFromSuperview()
+                
+                print("view is hidden")
+            }
            // drawPathDriver(obj: objUser!)
             
          //   print(objUser!.driverInfo!.driverLocation!.coordinates![1], objUser!.driverInfo!.driverLocation!.coordinates![0], self.locationStart.coordinate.latitude, self.locationStart.coordinate.longitude)
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "CabDetailsViewController") as! CabDetailsViewController
-        
-            self.addChild(vc)
-            vc.objResponse = objUser
-            vc.view.frame = self.view.frame
-            self.view.addSubview(vc.view)
-            vc.didMove(toParent: self)
-            drawPathDriver(obj: objUser!)
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "CabDetailsViewController") as! CabDetailsViewController
+//
+//            self.addChild(vc)
+//            vc.objResponse = objUser
+//            vc.view.frame = self.view.frame
+//            self.view.addSubview(vc.view)
+//            vc.didMove(toParent: self)
+//            drawPathDriver(obj: objUser!)
          //   self.drawPath(startLocation: locationStart, endLocation: locationEnd)
         
-    //    let obj = Response.objUserCredentials(fromDict: notification.userInfo)
+        //    let obj = Response.objUserCredentials(fromDict: notification.userInfo)
       //  print(objUser?.orderId)
      }
         
     }
-//    if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
-//                UIApplication.shared.openURL(URL(string:"comgooglemaps://?saddr=\(strLat),\(strLong)&daddr=\(strLat1),\(strLong2)&directionsmode=driving&zoom=14&views=traffic")!)
-//            }
-//            else {
-//                print("Can't use comgooglemaps://");
-//            }
+
     
     func configureGoogleMap() {
         imgMarker.image = #imageLiteral(resourceName: "droff_ic")
@@ -320,72 +335,7 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
     }
     
     
-//    func drawPathDriver(obj: Response)
-//    {
-//
-//        let driverLat: Double = obj.driverInfo!.driverLocation!.coordinates![1] ?? 0.0
-//        let driverLon: Double = obj.driverInfo!.driverLocation!.coordinates![0] ?? 0.0
-//
-//        let origin = "\(driverLat),\(driverLon)"
-//
-//     //   let origin = "\(driverLat),\(driverLon)"
-//        let destination = "\(self.locationStart.coordinate.latitude),\(self.locationStart.coordinate.longitude)"
-//
-//        self.polyline.map = nil
-//        //self.googleMaps.clear()
-//     //   let url = "https://maps.googleapis.com/maps/api/directions/json?origin=28.891555664569626,78.47138989716768&destination=28.89512634277343,78.48155212402341&mode=driving&key=AIzaSyDOAIDFY9jhsFrZXDynm7-C4D6T_lxe52Y"
-//               //  https://maps.googleapis.com/maps/api/directions/json?origin=28.89512634277343,78.48155212402341&destination=28.8386481,78.7733286&mode=driving&key=AIzaSyDOAIDFY9jhsFrZXDynm7-C4D6T_lxe52Y
-//
-//        let url = "https://maps.googleapis.com/maps/api/directions/json?origin=\(origin)&destination=\(destination)&mode=driving&key=AIzaSyDOAIDFY9jhsFrZXDynm7-C4D6T_lxe52Y"
-    
-//
-//        AF.request(url).responseJSON { response in
-//
-//            print(response.request as Any)  // original URL request
-//            print(response.response as Any) // HTTP URL response
-//            print(response.data as Any)     // server data
-//            print(response.result as Any)   // result of response serialization
-//            do{
-//            let json = try JSON(data: response.data!)
-//            let routes = json["routes"].arrayValue
-//
-//            // print route using Polyline
-//            for route in routes
-//            {
-//                let routeOverviewPolyline = route["overview_polyline"].dictionary
-//                let points = routeOverviewPolyline?["points"]?.stringValue
-//                let path = GMSPath.init(fromEncodedPath: points!)
-//                let legs = route["legs"].arrayValue
-//
-//                for objLegs in legs {
-//                let dictDistance = objLegs["distance"].dictionary
-//                    print(dictDistance!["text"]?.stringValue)
-//                let dictDuration = objLegs["duration"].dictionary
-//                    print(dictDuration!["text"]?.stringValue)
-//
-//                let dictEndLocation = objLegs["end_location"].dictionary    //  abhishek
-//                        print(dictEndLocation!["lat"]?.stringValue)
-//                        print(dictEndLocation!["lng"]?.stringValue)
-//
-//                let dictStartLocation = objLegs["start_location"].dictionary
-//                        print(dictStartLocation!["lat"]?.stringValue)
-//                        print(dictStartLocation!["lng"]?.stringValue)
-//
-//                let end_address = objLegs["end_address"].stringValue
-//                let start_address = objLegs["start_address"].stringValue               // abhishek obj: Response
-//
-//                }
-//                self.polyline = GMSPolyline.init(path: path)
-//                self.polyline.strokeWidth = 4
-//                self.polyline.strokeColor = UIColor.black
-//                self.polyline.map = self.googleMaps
-//            }
-//            }catch let error{
-//                print(error.localizedDescription)
-//            }
-//        }
-//
-//    }
+
     func drawPathDriver(obj: Response) {
                 let driverLat: Double = obj.driverInfo!.driverLocation!.coordinates![1] ?? 0.0
                 let driverLon: Double = obj.driverInfo!.driverLocation!.coordinates![0] ?? 0.0
@@ -422,9 +372,7 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
                 }
             }
         }
-    
-    
-    
+
     
     // MARK: when start location tap, this will open the search location
     @IBAction func openStartLocation(_ sender: UIButton) {
