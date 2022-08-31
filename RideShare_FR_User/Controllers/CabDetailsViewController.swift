@@ -23,6 +23,8 @@ class CabDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let name = Notification.Name("updateDriver")
+        NotificationCenter.default.addObserver(self, selector: #selector(updateDrivers(_:)), name: name, object: nil)
 
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         self._view.layer.cornerRadius = 12
@@ -51,6 +53,48 @@ class CabDetailsViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
        // self.verif
+    }
+    @objc func updateDrivers(_ notification:Notification) {
+        
+        
+        if let notification = notification.userInfo?["gcm.notification.aps"] as? String, let jsonData = notification.data(using: .utf8)
+        {
+            
+            let objUser = Response.objUserCredentials(fromDict: jsonData)
+             
+         
+            if objUser?.notification_type == "accept_order" {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "CabDetailsViewController") as! CabDetailsViewController
+            
+                self.addChild(vc)
+                vc.objResponse = objUser
+                vc.view.frame = self.view.frame
+                self.view.addSubview(vc.view)
+                vc.didMove(toParent: self)
+               // drawPathDriver(obj: objUser!)
+            } else {
+              //  self.dismiss(animated: true, completion: nil)
+                self.view.removeFromSuperview()
+                
+                print("view is hidden")
+            }
+           // drawPathDriver(obj: objUser!)
+            
+         //   print(objUser!.driverInfo!.driverLocation!.coordinates![1], objUser!.driverInfo!.driverLocation!.coordinates![0], self.locationStart.coordinate.latitude, self.locationStart.coordinate.longitude)
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "CabDetailsViewController") as! CabDetailsViewController
+//
+//            self.addChild(vc)
+//            vc.objResponse = objUser
+//            vc.view.frame = self.view.frame
+//            self.view.addSubview(vc.view)
+//            vc.didMove(toParent: self)
+//            drawPathDriver(obj: objUser!)
+         //   self.drawPath(startLocation: locationStart, endLocation: locationEnd)
+        
+        //    let obj = Response.objUserCredentials(fromDict: notification.userInfo)
+      //  print(objUser?.orderId)
+     }
+        
     }
 
     

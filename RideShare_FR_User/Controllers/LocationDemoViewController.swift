@@ -471,7 +471,7 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
 
    
     func pullUpViewCollapsedViewHeight() -> CGFloat {
-            return bottomPadding + 10
+            return 0
        }
        
        func pullUpViewController() -> UIViewController {
