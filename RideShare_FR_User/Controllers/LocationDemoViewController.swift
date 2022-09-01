@@ -413,18 +413,20 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
     @IBAction func showDirection(_ sender: UIButton) {
         // when button direction tapped, must call drawpath func
       //  self.drawPath(startLocation: locationStart, endLocation: locationEnd)
-        if validation() {
-        self.drawPath(startLocation: locationStart, endLocation: locationEnd)
-        pullUpController.dataSource = self
-        pullUpController.setupCard(from: view)
-            pullUpController.expanded()
-            startLocation.isHidden = true
-            destinationLocation.isHidden = true
-            startBtn.isHidden = true
-            destinationBtn.isHidden = true
-            confirmBtn.isHidden = true
-       // self.vV.isHidden = true
-    }
+//        if validation() {
+//        self.drawPath(startLocation: locationStart, endLocation: locationEnd)
+//        pullUpController.dataSource = self
+//        pullUpController.setupCard(from: view)
+//            pullUpController.expanded()
+//            startLocation.isHidden = true
+//            destinationLocation.isHidden = true
+//            startBtn.isHidden = true
+//            destinationBtn.isHidden = true
+//            confirmBtn.isHidden = true
+//       // self.vV.isHidden = true
+//    }
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
+       self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

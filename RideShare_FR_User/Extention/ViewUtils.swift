@@ -213,3 +213,25 @@ func setStatusBarColor(color:UIColor){
         statusBar1.backgroundColor = color
     }
 }
+
+
+func alertTextBox(strOk: String? = KString.ok, withTitle: String? = KString.strAppHeader, message: String?, cancelAction: @escaping (()->()), okAction: @escaping ((String)->())) {
+    let alert = UIAlertController(title: withTitle, message: message, preferredStyle: .alert)
+    let cancelBtn = UIAlertAction(title: KString.cancel, style: .cancel) { _ in
+        cancelAction()
+    }
+    //2. Add the text field. You can configure it however you need.
+    alert.addTextField { (textField) in
+        textField.placeholder = "Enter Tip Amount"
+        textField.keyboardType = .numberPad
+    }
+    alert.addAction(cancelBtn)
+    // 3. Grab the value from the text field, and print it when the user clicks OK.
+    alert.addAction(UIAlertAction(title: strOk, style: .default, handler: { [weak alert] (_) in
+        let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+        okAction(textField?.text ?? "")
+        print("Text field: \(String(describing: textField?.text))")
+    }))
+    let appWindow = UIApplication.shared.delegate?.window??.rootViewController
+    appWindow?.present(alert, animated: true, completion: nil)
+}
