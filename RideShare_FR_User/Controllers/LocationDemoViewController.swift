@@ -279,7 +279,7 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
         let origin = "\(startLocation.coordinate.latitude),\(startLocation.coordinate.longitude)"
     
         let destination = "\(endLocation.coordinate.latitude),\(endLocation.coordinate.longitude)"
-        
+        googleMaps.clear()
       //  self.polyline.map = nil
         self.googleMaps.clear()
         createMarker(titleMarker: "Current Location", iconMarker: #imageLiteral(resourceName: "ic_map_pin"), latitude: startLocation.coordinate.latitude, longitude: startLocation.coordinate.longitude)
@@ -471,7 +471,7 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
 
    
     func pullUpViewCollapsedViewHeight() -> CGFloat {
-            return 0
+            return bottomPadding + 2
        }
        
        func pullUpViewController() -> UIViewController {
@@ -559,6 +559,15 @@ extension LocationDemoViewController: UITextFieldDelegate, GMSAutocompleteViewCo
             reverseGeocodeCoordinate(place.coordinate, placeName: place.name ?? "")
           //  destinationLocation.text = "\(place.coordinate.latitude), \(place.coordinate.longitude)"
             locationEnd = CLLocation(latitude: place.coordinate.latitude, longitude: place.coordinate.longitude)
+            self.drawPath(startLocation: locationStart, endLocation: locationEnd)
+            pullUpController.dataSource = self
+            pullUpController.setupCard(from: view)
+                pullUpController.expanded()
+                startLocation.isHidden = true
+                destinationLocation.isHidden = true
+                startBtn.isHidden = true
+                destinationBtn.isHidden = true
+                confirmBtn.isHidden = true
          //   createMarker(titleMarker: "Location End", iconMarker: #imageLiteral(resourceName: "ic_map_pin"), latitude: place.coordinate.latitude, longitude: place.coordinate.longitude)
         }
         
@@ -637,8 +646,6 @@ extension LocationDemoViewController : GMSMapViewDelegate {
     
     
 }
-
-
 
 
 @available(iOS 13.0, *)

@@ -23,12 +23,14 @@ class CabDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let name = Notification.Name("updateDriver")
-        NotificationCenter.default.addObserver(self, selector: #selector(updateDrivers(_:)), name: name, object: nil)
-
+        
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         self._view.layer.cornerRadius = 12
         self._view.clipsToBounds = true
+        
+        let name = Notification.Name("updateDriver")
+        NotificationCenter.default.addObserver(self, selector: #selector(updateDrivers(_:)), name: name, object: nil)
+
         // Do any additional setup after loading the view.
         self.plateLbl.text = objResponse?.driverInfo?.plate_number
         self.carNameLbl.text = objResponse?.driverInfo?.vehicle_subcategory_name

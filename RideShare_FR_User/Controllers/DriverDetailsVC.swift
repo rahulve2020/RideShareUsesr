@@ -85,10 +85,7 @@ class DriverDetailsVC: UIViewController {
         self.view.removeFromSuperview()
         
     }
-    
-    
-    
-    
+ 
 
     func getRideList(){
         var dicParam : Dictionary<String,Any> = Dictionary()

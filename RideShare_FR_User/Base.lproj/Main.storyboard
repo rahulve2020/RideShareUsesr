@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="00J-9a-08g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="00J-9a-08g">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -5050,7 +5050,7 @@
                                     <action selector="openStartLocation:" destination="e4A-m0-EPN" eventType="touchUpInside" id="CAr-KH-5Ne"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TM-4y-Q8V">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TM-4y-Q8V">
                                 <rect key="frame" x="137.5" y="597" width="100" height="40"/>
                                 <color key="backgroundColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -5309,10 +5309,10 @@
             </objects>
             <point key="canvasLocation" x="3983" y="-767"/>
         </scene>
-        <!--View Controller-->
+        <!--Procced PaymentVC-->
         <scene sceneID="81l-XY-FNk">
             <objects>
-                <viewController id="nDB-UL-d9J" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProccedPaymentVC" id="nDB-UL-d9J" customClass="ProccedPaymentVC" customModule="RideShare_FR_User" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5sf-Rs-vbS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5378,6 +5378,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="proccedPaymentBtn:" destination="nDB-UL-d9J" eventType="touchUpInside" id="ej5-nG-MZk"/>
                                             <action selector="saveBtn:" destination="8rM-AG-iwo" eventType="touchUpInside" id="5Ek-Ht-8kc"/>
                                         </connections>
                                     </button>
@@ -5406,6 +5407,9 @@
                             <constraint firstItem="7yg-tf-U5Y" firstAttribute="bottom" secondItem="frT-8V-On1" secondAttribute="bottom" constant="200" id="jDm-Ih-Y5o"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_view" destination="frT-8V-On1" id="qtN-Oc-jVy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4m-SV-dCd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

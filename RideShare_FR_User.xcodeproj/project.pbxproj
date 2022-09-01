@@ -11,6 +11,7 @@
 		04AAFEB2289D807B001A957E /* DriverDetailNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AAFEB1289D807B001A957E /* DriverDetailNotification.swift */; };
 		3821B0B0A7826D467D5B2EEB /* Pods_RideShare_FR_User_RideShare_FR_UserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7664C0572D37FF1E199F5B /* Pods_RideShare_FR_User_RideShare_FR_UserUITests.framework */; };
 		41A04D476000986B2A7E2E82 /* Pods_RideShare_FR_UserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE60327AA55B7C5A96288C46 /* Pods_RideShare_FR_UserTests.framework */; };
+		4828BA5C28C08A7400813572 /* ProccedPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4828BA5B28C08A7400813572 /* ProccedPaymentVC.swift */; };
 		4832B51028AE1B6800F55CC8 /* UserHistoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4832B50F28AE1B6800F55CC8 /* UserHistoryDetails.swift */; };
 		7043D7818EFA333C21E08734 /* Pods_RideShare_FR_User.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3404D9CFABA27BED4153A319 /* Pods_RideShare_FR_User.framework */; };
 		7D11EBC928B630EC00AB8B3B /* CarAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D11EBC828B630EC00AB8B3B /* CarAnimator.swift */; };
@@ -117,6 +118,7 @@
 		04AAFEA9289D624E001A957E /* CabDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabDetailsViewController.swift; sourceTree = "<group>"; };
 		04AAFEB1289D807B001A957E /* DriverDetailNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailNotification.swift; sourceTree = "<group>"; };
 		3404D9CFABA27BED4153A319 /* Pods_RideShare_FR_User.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideShare_FR_User.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4828BA5B28C08A7400813572 /* ProccedPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProccedPaymentVC.swift; sourceTree = "<group>"; };
 		4832B50F28AE1B6800F55CC8 /* UserHistoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryDetails.swift; sourceTree = "<group>"; };
 		48864BFF3FF017A522E7E9EB /* Pods-RideShare_FR_UserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideShare_FR_UserTests.debug.xcconfig"; path = "Target Support Files/Pods-RideShare_FR_UserTests/Pods-RideShare_FR_UserTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D581C11A7E23B7E195E6B25 /* Pods-RideShare_FR_User.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideShare_FR_User.release.xcconfig"; path = "Target Support Files/Pods-RideShare_FR_User/Pods-RideShare_FR_User.release.xcconfig"; sourceTree = "<group>"; };
@@ -407,6 +409,7 @@
 				7D8CCCA82881881C00154DB2 /* DriverDetailsVC.swift */,
 				7DA1CA97288E7470002DC244 /* LocationDemoViewController.swift */,
 				04AAFEA9289D624E001A957E /* CabDetailsViewController.swift */,
+				4828BA5B28C08A7400813572 /* ProccedPaymentVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -780,6 +783,7 @@
 				7DD356282875CD5A00C73E41 /* ActivityIndicator.swift in Sources */,
 				7DA1CA98288E7470002DC244 /* LocationDemoViewController.swift in Sources */,
 				7DA01C942872C5020097A1EC /* SSAnimatorPopup.swift in Sources */,
+				4828BA5C28C08A7400813572 /* ProccedPaymentVC.swift in Sources */,
 				7DC11A2A286ED795004AE1A0 /* RequestRideVC.swift in Sources */,
 				7D11EBC928B630EC00AB8B3B /* CarAnimator.swift in Sources */,
 				7DA01CC1287307190097A1EC /* RatingViewCell.swift in Sources */,

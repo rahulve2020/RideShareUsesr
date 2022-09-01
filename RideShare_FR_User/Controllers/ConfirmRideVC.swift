@@ -13,8 +13,6 @@ protocol UpdateView {
 }
 
 
-        
-
 @available(iOS 13.0, *)
 class ConfirmRideVC: UIViewController, SOPullUpViewDelegate {
 
