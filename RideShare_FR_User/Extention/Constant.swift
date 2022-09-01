@@ -29,8 +29,10 @@ struct KString {
 
 //MARK: Constant Color
 struct KColor {
-    static let hexStrAppTheme            = "E8206D"
+    static let hexStrAppTheme            = "3C5AA6"
     static let hexStrBorder              = "b7b7b7"
+    static let hexStrGreen              = "49E670"
+    static let hexStrLight              = "C5C5C5"
 }
 
 //MARK: Font

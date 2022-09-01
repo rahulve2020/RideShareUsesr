@@ -36,7 +36,6 @@
 		7DA01CA22872DD210097A1EC /* UpdateProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA01CA12872DD210097A1EC /* UpdateProfileVC.swift */; };
 		7DA01CA42872E65A0097A1EC /* AddCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA01CA32872E65A0097A1EC /* AddCardVC.swift */; };
 		7DA01CA62872E9CA0097A1EC /* AddCardDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA01CA52872E9CA0097A1EC /* AddCardDetailsVC.swift */; };
-		7DA01CBF287307130097A1EC /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA01CBE287307130097A1EC /* RatingVC.swift */; };
 		7DA01CC1287307190097A1EC /* RatingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA01CC0287307180097A1EC /* RatingViewCell.swift */; };
 		7DA01CC3287307A40097A1EC /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA01CC2287307A40097A1EC /* AboutUsVC.swift */; };
 		7DA01CC5287309280097A1EC /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA01CC4287309280097A1EC /* ChangePasswordVC.swift */; };
@@ -94,6 +93,15 @@
 		7DD356362875CEEC00C73E41 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD356332875CEEC00C73E41 /* SwiftLoader.swift */; };
 		7DD356372875CEEC00C73E41 /* SlidingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD356342875CEEC00C73E41 /* SlidingContainerViewController.swift */; };
 		7DD356392875CF9A00C73E41 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD356382875CF9A00C73E41 /* Constant.swift */; };
+		B762510728C0AA8000CBA7C8 /* TipCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762510628C0AA8000CBA7C8 /* TipCollCell.swift */; };
+		B7DBC5D028C088EE00979AA8 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBC5CF28C088EE00979AA8 /* PaymentVC.swift */; };
+		B7DBC5D228C08A3600979AA8 /* PaymentSuccessfulVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBC5D128C08A3600979AA8 /* PaymentSuccessfulVC.swift */; };
+		B7DBC5D428C08A5800979AA8 /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBC5D328C08A5800979AA8 /* RatingVC.swift */; };
+		B7DBC5D628C08E4600979AA8 /* RateDriverAboutRideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBC5D528C08E4600979AA8 /* RateDriverAboutRideVC.swift */; };
+		B7DBC5D828C096C300979AA8 /* ViewExtensionIbInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBC5D728C096C300979AA8 /* ViewExtensionIbInspectable.swift */; };
+		B7DBC5DD28C0996500979AA8 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7DBC5DA28C0996500979AA8 /* Roboto-Medium.ttf */; };
+		B7DBC5DE28C0996500979AA8 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7DBC5DB28C0996500979AA8 /* Roboto-Regular.ttf */; };
+		B7DBC5DF28C0996500979AA8 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7DBC5DC28C0996500979AA8 /* Roboto-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,7 +154,6 @@
 		7DA01CA12872DD210097A1EC /* UpdateProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileVC.swift; sourceTree = "<group>"; };
 		7DA01CA32872E65A0097A1EC /* AddCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardVC.swift; sourceTree = "<group>"; };
 		7DA01CA52872E9CA0097A1EC /* AddCardDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardDetailsVC.swift; sourceTree = "<group>"; };
-		7DA01CBE287307130097A1EC /* RatingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingVC.swift; sourceTree = "<group>"; };
 		7DA01CC0287307180097A1EC /* RatingViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewCell.swift; sourceTree = "<group>"; };
 		7DA01CC2287307A40097A1EC /* AboutUsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		7DA01CC4287309280097A1EC /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
@@ -213,6 +220,15 @@
 		A2EF3B74E2D87907686EC96B /* Pods-RideShare_FR_User-RideShare_FR_UserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideShare_FR_User-RideShare_FR_UserUITests.debug.xcconfig"; path = "Target Support Files/Pods-RideShare_FR_User-RideShare_FR_UserUITests/Pods-RideShare_FR_User-RideShare_FR_UserUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A79B18A2119903895A0D2912 /* Pods-RideShare_FR_UserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideShare_FR_UserTests.release.xcconfig"; path = "Target Support Files/Pods-RideShare_FR_UserTests/Pods-RideShare_FR_UserTests.release.xcconfig"; sourceTree = "<group>"; };
 		A95D0392C3BE8A744E53EBA4 /* Pods-RideShare_FR_User.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideShare_FR_User.debug.xcconfig"; path = "Target Support Files/Pods-RideShare_FR_User/Pods-RideShare_FR_User.debug.xcconfig"; sourceTree = "<group>"; };
+		B762510628C0AA8000CBA7C8 /* TipCollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCollCell.swift; sourceTree = "<group>"; };
+		B7DBC5CF28C088EE00979AA8 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		B7DBC5D128C08A3600979AA8 /* PaymentSuccessfulVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessfulVC.swift; sourceTree = "<group>"; };
+		B7DBC5D328C08A5800979AA8 /* RatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingVC.swift; sourceTree = "<group>"; };
+		B7DBC5D528C08E4600979AA8 /* RateDriverAboutRideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateDriverAboutRideVC.swift; sourceTree = "<group>"; };
+		B7DBC5D728C096C300979AA8 /* ViewExtensionIbInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensionIbInspectable.swift; sourceTree = "<group>"; };
+		B7DBC5DA28C0996500979AA8 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		B7DBC5DB28C0996500979AA8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		B7DBC5DC28C0996500979AA8 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		EE60327AA55B7C5A96288C46 /* Pods_RideShare_FR_UserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideShare_FR_UserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -296,6 +312,7 @@
 				7DA01C9B2872DB410097A1EC /* NotificationViewCell.swift */,
 				7DB6FC782881672C00D8E068 /* ConfirmRideViewCell.swift */,
 				7DAFEFD128854894007E1D3A /* AddCardViewCell.swift */,
+				B762510628C0AA8000CBA7C8 /* TipCollCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -340,6 +357,7 @@
 		7DC119F7286ED232004AE1A0 /* RideShare_FR_User */ = {
 			isa = PBXGroup;
 			children = (
+				B7DBC5D928C0996500979AA8 /* Font */,
 				04AAFEA4289D20A5001A957E /* RideShare_FR_User.entitlements */,
 				7DBC07022892C5EF00E692F4 /* search.gif */,
 				7DF10A072893D21E0060774D /* bingbong.caf */,
@@ -397,7 +415,6 @@
 				7DA01C982872DB2F0097A1EC /* NotificationVC.swift */,
 				7DA01C9F2872DD1B0097A1EC /* ProfileViewController.swift */,
 				7DA01CA12872DD210097A1EC /* UpdateProfileVC.swift */,
-				7DA01CBE287307130097A1EC /* RatingVC.swift */,
 				7DA01CA32872E65A0097A1EC /* AddCardVC.swift */,
 				7DA01CA52872E9CA0097A1EC /* AddCardDetailsVC.swift */,
 				7DA01CC2287307A40097A1EC /* AboutUsVC.swift */,
@@ -409,7 +426,14 @@
 				7D8CCCA82881881C00154DB2 /* DriverDetailsVC.swift */,
 				7DA1CA97288E7470002DC244 /* LocationDemoViewController.swift */,
 				04AAFEA9289D624E001A957E /* CabDetailsViewController.swift */,
+<<<<<<< HEAD
 				4828BA5B28C08A7400813572 /* ProccedPaymentVC.swift */,
+=======
+				B7DBC5CF28C088EE00979AA8 /* PaymentVC.swift */,
+				B7DBC5D128C08A3600979AA8 /* PaymentSuccessfulVC.swift */,
+				B7DBC5D328C08A5800979AA8 /* RatingVC.swift */,
+				B7DBC5D528C08E4600979AA8 /* RateDriverAboutRideVC.swift */,
+>>>>>>> 8f43464027761249ec42c6ac56c9cb5cc984be8f
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -437,6 +461,7 @@
 				7DD356382875CF9A00C73E41 /* Constant.swift */,
 				7DD3562F2875CE9500C73E41 /* ViewUtils.swift */,
 				7DBCC0302877FB4B0064F9D9 /* String_Extension.swift */,
+				B7DBC5D728C096C300979AA8 /* ViewExtensionIbInspectable.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -463,6 +488,16 @@
 				7DD356342875CEEC00C73E41 /* SlidingContainerViewController.swift */,
 			);
 			path = Slide;
+			sourceTree = "<group>";
+		};
+		B7DBC5D928C0996500979AA8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B7DBC5DA28C0996500979AA8 /* Roboto-Medium.ttf */,
+				B7DBC5DB28C0996500979AA8 /* Roboto-Regular.ttf */,
+				B7DBC5DC28C0996500979AA8 /* Roboto-Bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		CA8E7EDCA94752E477ADB8E5 /* Pods */ = {
@@ -589,6 +624,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DBC5DD28C0996500979AA8 /* Roboto-Medium.ttf in Resources */,
+				B7DBC5DE28C0996500979AA8 /* Roboto-Regular.ttf in Resources */,
+				B7DBC5DF28C0996500979AA8 /* Roboto-Bold.ttf in Resources */,
 				7DC11A05286ED238004AE1A0 /* LaunchScreen.storyboard in Resources */,
 				7DC11A3E286EF137004AE1A0 /* MenuView.xib in Resources */,
 				7DC11A41286EF137004AE1A0 /* MenuCell.xib in Resources */,
@@ -772,9 +810,9 @@
 				7DC11A3F286EF137004AE1A0 /* MenuCell.swift in Sources */,
 				7DA01CC5287309280097A1EC /* ChangePasswordVC.swift in Sources */,
 				7DA01C952872C5020097A1EC /* SSAnimatorCameFromTop.swift in Sources */,
-				7DA01CBF287307130097A1EC /* RatingVC.swift in Sources */,
 				7DD356302875CE9500C73E41 /* ViewUtils.swift in Sources */,
 				7DD356292875CD5A00C73E41 /* Validation.swift in Sources */,
+				B762510728C0AA8000CBA7C8 /* TipCollCell.swift in Sources */,
 				7DA01C992872DB2F0097A1EC /* NotificationVC.swift in Sources */,
 				7DBCC03828784D740064F9D9 /* UserProfile.swift in Sources */,
 				7DC11A34286EDDB3004AE1A0 /* ForgetPasswordVC.swift in Sources */,
@@ -785,6 +823,7 @@
 				7DA01C942872C5020097A1EC /* SSAnimatorPopup.swift in Sources */,
 				4828BA5C28C08A7400813572 /* ProccedPaymentVC.swift in Sources */,
 				7DC11A2A286ED795004AE1A0 /* RequestRideVC.swift in Sources */,
+				B7DBC5D828C096C300979AA8 /* ViewExtensionIbInspectable.swift in Sources */,
 				7D11EBC928B630EC00AB8B3B /* CarAnimator.swift in Sources */,
 				7DA01CC1287307190097A1EC /* RatingViewCell.swift in Sources */,
 				7DB6FC792881672C00D8E068 /* ConfirmRideViewCell.swift in Sources */,
@@ -809,11 +848,13 @@
 				7DC11A40286EF137004AE1A0 /* MenuView.swift in Sources */,
 				7D8CCCA92881881F00154DB2 /* DriverDetailsVC.swift in Sources */,
 				7DC119FD286ED232004AE1A0 /* ViewController.swift in Sources */,
+				B7DBC5D028C088EE00979AA8 /* PaymentVC.swift in Sources */,
 				7DD356392875CF9A00C73E41 /* Constant.swift in Sources */,
 				7DD3562C2875CD5A00C73E41 /* DismissAlert.swift in Sources */,
 				7DA1CA9A288EBCF6002DC244 /* vehicleCategoryList.swift in Sources */,
 				04AAFEB2289D807B001A957E /* DriverDetailNotification.swift in Sources */,
 				4832B51028AE1B6800F55CC8 /* UserHistoryDetails.swift in Sources */,
+				B7DBC5D228C08A3600979AA8 /* PaymentSuccessfulVC.swift in Sources */,
 				7DC119F9286ED232004AE1A0 /* AppDelegate.swift in Sources */,
 				7DA01C8A2872B9DE0097A1EC /* SideMenuController.swift in Sources */,
 				7DD3562A2875CD5A00C73E41 /* AppServices.swift in Sources */,
@@ -823,6 +864,7 @@
 				7DD3562E2875CE8200C73E41 /* Facade.swift in Sources */,
 				7D8CCCA728817C9700154DB2 /* DriverListModel.swift in Sources */,
 				7DD356252875CD5A00C73E41 /* DSUserPrefrence.swift in Sources */,
+				B7DBC5D628C08E4600979AA8 /* RateDriverAboutRideVC.swift in Sources */,
 				7DA01CA62872E9CA0097A1EC /* AddCardDetailsVC.swift in Sources */,
 				7DA01C9E2872DB6F0097A1EC /* SettingViewController.swift in Sources */,
 				7DD356242875CD5A00C73E41 /* AppHelper.swift in Sources */,
@@ -831,6 +873,7 @@
 				7DC119FB286ED232004AE1A0 /* SceneDelegate.swift in Sources */,
 				7DA01C892872B9DE0097A1EC /* SideMenuCell.swift in Sources */,
 				7DAFEFD4288549A8007E1D3A /* CardListModel.swift in Sources */,
+				B7DBC5D428C08A5800979AA8 /* RatingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1024,10 +1067,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1064,10 +1108,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
