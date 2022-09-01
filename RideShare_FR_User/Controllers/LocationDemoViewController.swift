@@ -427,7 +427,7 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
 //    }
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
        self.navigationController?.pushViewController(vc, animated: true)
-    }
+    } 
      
     
     private func reverseGeocodeCoordinate(_ coordinate: CLLocationCoordinate2D, placeName : String) {
