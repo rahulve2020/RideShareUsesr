@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class PaymentVC: UIViewController {
     
     //MARK:- IBOutlet
@@ -54,6 +55,7 @@ class PaymentVC: UIViewController {
 
 }
 
+@available(iOS 13.0, *)
 extension PaymentVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -109,6 +111,7 @@ extension PaymentVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     }
 }
 
+@available(iOS 13.0, *)
 extension PaymentVC: CardListDelegate {
     func didSelectCreditCard(model: CardListModel?) {
         

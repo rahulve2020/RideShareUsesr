@@ -425,8 +425,8 @@ class LocationDemoViewController: SidePanelBaseViewController,SOPullUpViewDataSo
 //            confirmBtn.isHidden = true
 //       // self.vV.isHidden = true
 //    }
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
-       self.navigationController?.pushViewController(vc, animated: true)
+     //   let vc = self.storyboard?.instantiateViewController(withIdentifier: "PaymentVC") as! PaymentVC
+     //  self.navigationController?.pushViewController(vc, animated: true)
     } 
      
     
@@ -561,6 +561,15 @@ extension LocationDemoViewController: UITextFieldDelegate, GMSAutocompleteViewCo
             reverseGeocodeCoordinate(place.coordinate, placeName: place.name ?? "")
           //  destinationLocation.text = "\(place.coordinate.latitude), \(place.coordinate.longitude)"
             locationEnd = CLLocation(latitude: place.coordinate.latitude, longitude: place.coordinate.longitude)
+                    self.drawPath(startLocation: locationStart, endLocation: locationEnd)
+                    pullUpController.dataSource = self
+                    pullUpController.setupCard(from: view)
+                        pullUpController.expanded()
+                        startLocation.isHidden = true
+                        destinationLocation.isHidden = true
+                        startBtn.isHidden = true
+                        destinationBtn.isHidden = true
+                        confirmBtn.isHidden = true
          //   createMarker(titleMarker: "Location End", iconMarker: #imageLiteral(resourceName: "ic_map_pin"), latitude: place.coordinate.latitude, longitude: place.coordinate.longitude)
         }
         

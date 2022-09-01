@@ -4251,15 +4251,15 @@
                                 <rect key="frame" x="0.0" y="261" width="375" height="406"/>
                                 <color key="backgroundColor" red="0.97254914049999996" green="0.97254902119999997" blue="0.97254902119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RideHistoryViewCell" rowHeight="177" id="NXo-9g-teC" customClass="RideHistoryViewCell" customModule="RideShare_FR_User" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="177"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RideHistoryViewCell" rowHeight="191" id="NXo-9g-teC" customClass="RideHistoryViewCell" customModule="RideShare_FR_User" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="191"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NXo-9g-teC" id="X3h-pc-oA2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="177"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJv-uc-loM">
-                                                    <rect key="frame" x="20" y="6" width="335" height="163"/>
+                                                    <rect key="frame" x="20" y="3" width="335" height="180"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOG-b6-LTE">
                                                             <rect key="frame" x="30" y="15" width="51" height="17"/>
@@ -4267,8 +4267,8 @@
                                                             <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Delhi metro Staion , sector 53.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4E-43-fXP">
-                                                            <rect key="frame" x="30" y="37" width="232.5" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Delhi metro Staion , sector 53.." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4E-43-fXP">
+                                                            <rect key="frame" x="30" y="37" width="295" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -4286,8 +4286,8 @@
                                                             <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Delhi metro Staion , sector 75.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLY-pf-UbN">
-                                                            <rect key="frame" x="30" y="97" width="232" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Delhi metro Staion , sector 75.." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLY-pf-UbN">
+                                                            <rect key="frame" x="30" y="97" width="295" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -4318,10 +4318,12 @@
                                                         <constraint firstAttribute="trailing" secondItem="V84-4Y-4Ge" secondAttribute="trailing" id="27D-WY-Ff7"/>
                                                         <constraint firstItem="z5L-Ak-EeW" firstAttribute="top" secondItem="V84-4Y-4Ge" secondAttribute="bottom" constant="10" id="2yP-Zz-OuN"/>
                                                         <constraint firstItem="oLY-pf-UbN" firstAttribute="leading" secondItem="mJv-uc-loM" secondAttribute="leading" constant="30" id="5rI-Ms-rqS"/>
-                                                        <constraint firstAttribute="height" constant="163" id="BSo-f4-4gs"/>
+                                                        <constraint firstAttribute="trailing" secondItem="oLY-pf-UbN" secondAttribute="trailing" constant="10" id="BFP-2k-iAA"/>
+                                                        <constraint firstAttribute="height" constant="180" id="BSo-f4-4gs"/>
                                                         <constraint firstItem="z5L-Ak-EeW" firstAttribute="leading" secondItem="mJv-uc-loM" secondAttribute="leading" constant="30" id="Bzg-hq-o8s"/>
                                                         <constraint firstItem="amu-FR-9FL" firstAttribute="leading" secondItem="mJv-uc-loM" secondAttribute="leading" id="KRP-ue-i1S"/>
                                                         <constraint firstItem="r4E-43-fXP" firstAttribute="top" secondItem="BOG-b6-LTE" secondAttribute="bottom" constant="5" id="QKz-UQ-gwV"/>
+                                                        <constraint firstAttribute="trailing" secondItem="r4E-43-fXP" secondAttribute="trailing" constant="10" id="S6T-Rp-tkH"/>
                                                         <constraint firstAttribute="trailing" secondItem="amu-FR-9FL" secondAttribute="trailing" id="Ten-Od-dFc"/>
                                                         <constraint firstItem="amu-FR-9FL" firstAttribute="top" secondItem="oLY-pf-UbN" secondAttribute="bottom" constant="10" id="VuJ-t8-5lX"/>
                                                         <constraint firstItem="V84-4Y-4Ge" firstAttribute="leading" secondItem="mJv-uc-loM" secondAttribute="leading" constant="30" id="YmK-B4-Ovg"/>
@@ -5054,7 +5056,7 @@
                                     <action selector="openStartLocation:" destination="e4A-m0-EPN" eventType="touchUpInside" id="CAr-KH-5Ne"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TM-4y-Q8V">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TM-4y-Q8V">
                                 <rect key="frame" x="137.5" y="597" width="100" height="40"/>
                                 <color key="backgroundColor" red="0.23921568630000001" green="0.35294117650000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -5313,10 +5315,10 @@
             </objects>
             <point key="canvasLocation" x="3983" y="-767"/>
         </scene>
-        <!--View Controller-->
+        <!--Procced PaymentVC-->
         <scene sceneID="81l-XY-FNk">
             <objects>
-                <viewController id="nDB-UL-d9J" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProccedPaymentVC" id="nDB-UL-d9J" customClass="ProccedPaymentVC" customModule="RideShare_FR_User" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5sf-Rs-vbS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5381,6 +5383,9 @@
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="proccedPaymentBtn:" destination="nDB-UL-d9J" eventType="touchUpInside" id="2c7-R9-NJH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -5407,6 +5412,9 @@
                             <constraint firstItem="7yg-tf-U5Y" firstAttribute="bottom" secondItem="frT-8V-On1" secondAttribute="bottom" constant="200" id="jDm-Ih-Y5o"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_view" destination="frT-8V-On1" id="0gS-2K-zCu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4m-SV-dCd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
